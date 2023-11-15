@@ -1,0 +1,135 @@
+
+#navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+
+#navbar li a{ 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(4, 4, 4);
+    transition: 0.4s;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+   color: rgb(191,63,85);
+}
+
+#navbar li a.active::after { 
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(191,63,85);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+h1 { 
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    color: black;
+    margin: 0; 
+    padding: 0;
+}
+
+h2 { 
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#section-p1 {
+padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+section { 
+    padding: 100px;
+    margin: 0;
+    
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap; 
+
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(57, 54, 57, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgb(57, 54, 57, 0.06);    
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+text-align: start;
+padding: 10 px 0;
+
+}
+
+#product1 .pro .des span{
+    color: rgb(85, 88, 91);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    color: rgb(3, 3, 3);
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+#product1 .pro .des h5 {
+   padding-top: 7px;
+   font-size: 17px; 
+   font-weight: 700;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+   color: #e7667b;
+}
+

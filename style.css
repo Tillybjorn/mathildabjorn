@@ -1,0 +1,402 @@
+h1 { 
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+}
+
+h2 { 
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.section-p1 {
+padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+section { 
+    padding: 100px;
+    margin: 0;
+    
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 40px;
+    color: #121111;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+
+body { 
+    width: 100%;
+   
+}
+
+/* Header Start */  
+
+#header { 
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px; rgba(0, 0, 0, 0.06); 
+}
+
+
+
+#navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{ 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    transition: 0.4s;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+   color: rgb(191,63,85);
+}
+
+#navbar li a.active::after { 
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(191,63,85);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* Home page */
+
+#hero{
+background-image: url(pexels-dziana-hasanbekava-5480696.jpg);
+height: 90vh;
+width: 89%;
+background-size: cover;
+background-position: top 25% right 0;
+padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hero h1 {
+    color: rgb(191, 63, 85);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#hero button {
+    background-image: url("Ljusorange\ Penseldrag\ Fotografi\ Logga\ \(1\).png");
+    background-color: white;
+    color: #e7667b;
+    padding: 14px 80px 14px 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(57, 54, 57, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgb(57, 54, 57, 0.06);    
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+text-align: start;
+padding: 10 px 0;
+
+}
+
+#product1 .pro .des span{
+    color: rgb(85, 88, 91);
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#product1 .pro .des i {
+    font-size: 13px;
+    color: rgb(250, 250, 13);
+}
+
+#product1 .pro .des h4 {
+   padding-top: 7px;
+   font-size: 17px; 
+   font-weight: 700;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+   color: #e7667b;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #ef7474;
+    font-weight: 500;
+    color:#0e0c0d; 
+    border: 1px solid;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(pexels-monstera-production-7691068.jpg);
+width: 87%;
+height: 35vh;
+background-size: cover;
+background-position: center;
+}
+
+#banner h4 {
+color: #121111;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#banner h2 {
+color: rgb(4, 4, 4);
+font-size: 28px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#banner button:hover {
+  background-color: #e7667b;  
+  color: #121111;
+}
+
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(148, 147, 147,0.3);
+    border: 1px solid rgb(236, 233, 221,0.3);
+}
+
+#feature .febox:hover {
+    box-shadow: 10px 10px 54px rgb(148, 147, 147, 0.3);   
+}
+
+#feature .fe-box h4 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(8, 7, 8);
+    background-color: #f3b4bf;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(pexels-karolina-grabowska-4197563.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #121111;
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #121111;
+
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #121111;
+
+}
+
+#newsletter .form {
+display: flex;
+width: 40%;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+   
+}
+
+#newsletter button {
+   background-color: #f18a9b; 
+   color: #121111;
+   white-space: nowrap;
+   
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+footer .logo {
+margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #121111;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #121111;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer.follow i:hover,
+footer a:hover {
+color: #e7667b;
+}
+
+
+video {
+   text-align: center;
+   max-width: 100%;
+   height: auto;
+}
+  
+
+
+
